@@ -14,11 +14,15 @@ class HeaderDrawerScreen extends Component {
         Actions.drawerOpen()
     }
     handleClickOnCart = () => {
-        Actions.LoginScreen();
-        
+        if (Actions.currentScene == "HomeScreen") {
+            Actions.LoginScreen();
+        }
+
     }
     handleClickOnFavorite = () => {
-        Actions.AnimationScreen();
+        if (Actions.currentScene == "HomeScreen") {
+            Actions.AnimationScreen();
+        }
     }
 
     render() {

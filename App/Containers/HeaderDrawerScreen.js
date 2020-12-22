@@ -18,7 +18,7 @@ class HeaderDrawerScreen extends Component {
         
     }
     handleClickOnFavorite = () => {
-        alert("Favorith");
+        Actions.AnimationScreen();
     }
 
     render() {

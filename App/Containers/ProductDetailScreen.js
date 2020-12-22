@@ -16,7 +16,6 @@ class ProductDetailScreen extends Component {
         }
     }
     componentWillMount = () => {
-        console.tron.log({ Logitem: this.state.item })
         setTimeout(() => {
             this.setState({ statusLoading: false })
         }, 1000)

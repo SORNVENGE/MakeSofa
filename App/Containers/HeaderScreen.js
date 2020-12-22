@@ -39,13 +39,12 @@ class HeaderScreen extends Component {
             if (screen == "HomeScreen") {
                 isMenuIcon = true
             }
-            if (screenName == "ProductDetailScreen") {
+            if (screenName == "ProductDetailScreen" ) {
                 isMenuIcon = false
             }
-            if (screenName == "LoginScreen") {
+            if (screenName == "LoginScreen" || screenName == "AnimationScreen") {
                 isLoginScreen = false,
                 isMenuIcon = false
-
             }
             if (!statusHeader) {
                 return false;
@@ -79,7 +78,7 @@ class HeaderScreen extends Component {
 
 
                     {isLoginScreen ?
-                        <View style={{flexDirection:'row',width:'40%'}}>
+                        <View style={{ flexDirection: 'row', width: '40%' }}>
                             <TouchableOpacity onPress={() => this.handleClickOnCart()} style={{ flex: 1, position: 'relative', alignItems: 'flex-end', justifyContent: 'center' }}>
                                 <Icon type="AntDesign" name="shoppingcart" style={{ color: 'black', fontSize: 25, paddingRight: 5 }} />
                                 <Text style={{ backgroundColor: 'red', borderRadius: 50, paddingRight: 2, paddingLeft: 2, color: 'white', position: 'absolute', top: 10, right: -4, fontWeight: 'bold', fontSize: 13 }}>10</Text>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, ScrollView, Image, TextInput, TouchableOpacity } from 'react-native';
+import { View, Text, ScrollView, Image, TextInput, TouchableOpacity,StyleSheet } from 'react-native';
 import { Images, Color } from "../Themes";
 import { Icon, Container, Content } from 'native-base';
 
@@ -8,10 +8,9 @@ export default class LoginScreen extends Component {
         super(props);
         this.state = {}
     }
-
     render() {
         return (
-            <Container style={{paddingTop:30}}>
+            <Container style={{ paddingTop: 30 }}>
                 <Content>
                     <View style={{ flex: 1 }}>
                         <View style={{ alignItems: 'center' }}>
@@ -76,7 +75,7 @@ export default class LoginScreen extends Component {
                             </TouchableOpacity>
                         </View>
                         <View style={{ flexDirection: 'row', margin: 20 }}>
-                            <View style={{ flex: 2.5, borderBottomColor: 'black', borderBottomWidth:0.6, marginBottom: 8 }}>
+                            <View style={{ flex: 2.5, borderBottomColor: 'black', borderBottomWidth: 0.6, marginBottom: 8 }}>
                             </View>
                             <View style={{}}>
                                 <Text>OR</Text>

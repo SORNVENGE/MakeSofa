@@ -58,21 +58,20 @@ export default class LoginScreen extends Component {
                                         placeholder="Password"
                                     />
                                 </View>
-                                <View style={{ justifyContent: 'center', alignItems: 'center', paddingRight: 15 }}>
+                                <TouchableOpacity delayPressIn={0} style={{ justifyContent: 'center', alignItems: 'center', paddingRight: 15 }}>
                                     <Icon type="FontAwesome5" name="eye-slash" style={{ color: '#000066', fontSize: 22 }} />
-                                </View>
+                                </TouchableOpacity>
                             </View>
-
-                            <View style={{ alignItems: 'flex-end', marginRight: 20 }}>
+                            <TouchableOpacity delayPressIn={0} style={{ alignItems: 'flex-end', marginRight: 20 }}>
                                 <Text style={{ color: '#000066', fontWeight: 'bold' }}>Forgot Password?</Text>
-                            </View>
+                            </TouchableOpacity>
                         </View>
-                        <View style={{ margin: 15, padding: 10, alignItems: 'center', borderRadius: 18, backgroundColor: '#000066', shadowOffset: { width: 2, height: 3 }, shadowOpacity: 0.5, shadowRadius: 5, elevation: 5 }}>
+                        <TouchableOpacity delayPressIn={0} style={{ margin: 15, padding: 10, alignItems: 'center', borderRadius: 18, backgroundColor: '#000066', shadowOffset: { width: 2, height: 3 }, shadowOpacity: 0.5, shadowRadius: 5, elevation: 5 }}>
                             <Text style={{ fontWeight: 'bold', color: 'white', fontSize: 18 }}>LOG IN</Text>
-                        </View>
+                        </TouchableOpacity>
                         <View style={{ flexDirection: 'row', justifyContent: 'center' }}>
                             <Text style={{ color: '#000066' }}>Not Register yet? Please.</Text>
-                            <TouchableOpacity onPress={() => alert("sign up")}>
+                            <TouchableOpacity delayPressIn={0} onPress={() => alert("sign up")}>
                                 <Text style={{ color: '#000066', fontWeight: 'bold' }}> Sign Up</Text>
                             </TouchableOpacity>
                         </View>
@@ -86,22 +85,22 @@ export default class LoginScreen extends Component {
                             </View>
                         </View>
                         <View style={{ flexDirection: 'row', margin: 20 }}>
-                            <View style={{ marginRight: 10, flex: 2, justifyContent: 'center', alignItems: 'center', padding: 10, flexDirection: 'row', borderRadius: 10, backgroundColor: 'white', shadowOffset: { width: 2, height: 3 }, shadowOpacity: 0.5, shadowRadius: 5, elevation: 5, }}>
+                            <TouchableOpacity delayPressIn={0} style={{ marginRight: 10, flex: 2, justifyContent: 'center', alignItems: 'center', padding: 10, flexDirection: 'row', borderRadius: 10, backgroundColor: 'white', shadowOffset: { width: 2, height: 3 }, shadowOpacity: 0.5, shadowRadius: 5, elevation: 5, }}>
                                 <View style={{ marginRight: 10 }}>
                                     <Icon type="FontAwesome" name="facebook-official" style={{ color: '#000066', fontSize: 22 }} />
                                 </View>
                                 <View>
                                     <Text style={{ fontWeight: 'bold', fontSize: 16 }}>Facebook</Text>
                                 </View>
-                            </View>
-                            <View style={{ flex: 2, justifyContent: 'center', alignItems: 'center', padding: 10, flexDirection: 'row', borderRadius: 10, backgroundColor: 'white', shadowOffset: { width: 2, height: 3 }, shadowOpacity: 0.5, shadowRadius: 5, elevation: 5, }}>
+                            </TouchableOpacity>
+                            <TouchableOpacity delayPressIn={0} style={{ flex: 2, justifyContent: 'center', alignItems: 'center', padding: 10, flexDirection: 'row', borderRadius: 10, backgroundColor: 'white', shadowOffset: { width: 2, height: 3 }, shadowOpacity: 0.5, shadowRadius: 5, elevation: 5, }}>
                                 <View style={{ marginRight: 10 }}>
                                     <Icon type="AntDesign" name="google" style={{ color: '#000066', fontSize: 22 }} />
                                 </View>
                                 <View>
                                     <Text style={{ fontWeight: 'bold', fontSize: 16 }}>Google</Text>
                                 </View>
-                            </View>
+                            </TouchableOpacity>
                         </View>
                     </View>
                 </Content>

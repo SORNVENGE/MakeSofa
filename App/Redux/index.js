@@ -11,6 +11,7 @@ export const reducers = combineReducers({
   search: require('./SearchRedux').reducer,
   header: require('./HeaderRedux').reducer,
   footer: require('./FooterRedux').reducer,
+  listUser: require('./ListUserRedux').reducer,
 })
 
 export default () => {

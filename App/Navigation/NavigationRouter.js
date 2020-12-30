@@ -31,7 +31,7 @@ class NavigationRouter extends Component {
                         <Scene onEnter={() => this.onEnter(true, false, 'HomeScreen', 'HomeScreen')} key='HomeScreen' component={HomeScreen} hideNavBar={true} initial={true}></Scene>
                         <Scene onEnter={() => this.onEnter(false, true, 'ProductDetailScreen', 'ProductDetailScreen')} key='ProductDetailScreen' component={ProductDetailScreen} hideNavBar={true}></Scene>
                         <Scene onEnter={() => this.onEnter(false, true, 'LoginScreen', 'LoginScreen')} key='LoginScreen' component={LoginScreen} hideNavBar={true} ></Scene>
-                        <Scene onEnter={() => this.onEnter(false, true, 'AnimationScreen', 'AnimationScreen')} key='AnimationScreen' component={AnimationScreen} hideNavBar={true}></Scene>
+                        <Scene onEnter={() => this.onEnter(false, true, 'AnimationScreen', 'AnimationScreen')} key='AnimationScreen' component={AnimationScreen} hideNavBar={true} initial={true}></Scene>
                     </Scene>
                 </Drawer>
             </Router>

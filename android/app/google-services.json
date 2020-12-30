@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "274605459606",
+    "project_id": "madesofa-d0eba",
+    "storage_bucket": "madesofa-d0eba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:274605459606:android:8198aabbf43f5b55705ab7",
+        "android_client_info": {
+          "package_name": "com.makesofa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "274605459606-qgbu9jrcnn6rig9vmh7f1ft9qv18kbie.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEMY4Fd-nd5wZmbeV_C1WyEio9zaU9NXo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "274605459606-qgbu9jrcnn6rig9vmh7f1ft9qv18kbie.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

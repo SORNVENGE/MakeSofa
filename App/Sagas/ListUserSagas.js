@@ -19,7 +19,7 @@ export function * getListUser (api, action) {
   // get current data from Store
   // const currentData = yield select(ListUserSelectors.getData)
   // make the call to the api
-  const response = yield call(api.getlistUser, data)
+  const response = yield call(api.getListUser, data)
 
   // success?
   if (response.ok) {

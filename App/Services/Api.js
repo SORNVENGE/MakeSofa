@@ -2,7 +2,7 @@
 import apisauce from 'apisauce'
 
 // our "constructor"
-const create = (baseURL = 'https://api.github.com/') => {
+const create = (baseURL = 'https://jsonplaceholder.typicode.com/') => {
   // ------
   // STEP 1
   // ------
@@ -14,10 +14,13 @@ const create = (baseURL = 'https://api.github.com/') => {
     baseURL,
     // here are some default headers
     headers: {
-      'Cache-Control': 'no-cache'
+      'Cache-Control': 'no-cache',
+      'Accept': 'application',
+      'Content-Type': 'application/json',
+      // 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJib2R5Ijoic3R1ZmYiLCJpYXQiOjE2MDIzMTEzOTl9.vrI-o2KRre4JZfXCbB_mRe3pyJsPaooHjD2wZTp5Skw'
     },
     // 10 second timeout...
-    timeout: 10000
+    timeout: 60000
   })
 
   // ------
@@ -37,6 +40,8 @@ const create = (baseURL = 'https://api.github.com/') => {
   const getRoot = () => api.get('')
   const getRate = () => api.get('rate_limit')
   const getUser = (username) => api.get('search/users', {q: username})
+  const getListUser = () => api.get('users')
+
 
   // ------
   // STEP 3
@@ -54,7 +59,8 @@ const create = (baseURL = 'https://api.github.com/') => {
     // a list of the API functions from step 2
     getRoot,
     getRate,
-    getUser
+    getUser,
+    getListUser
   }
 }
 
